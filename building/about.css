@@ -1,0 +1,26 @@
+.about-foodfy {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.about-foodfy h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.about-foodfy h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.about-foodfy p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  color: #444444;
+}
