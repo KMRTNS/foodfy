@@ -1,0 +1,54 @@
+{% extends 'layout.njk' %}
+
+  {% block bold %}
+  
+  <a href="/"><img src="/assets/logo.png" alt="logo"></a>
+  <a href="/about">Sobre</a>
+  <a href="/recipes">Receitas</a>
+  
+  {% endblock %}
+
+  {% block content %}
+
+  <section>
+
+    <div class="about">
+
+      <div class="about_description">
+        <h1>As melhores receitas</h1>
+        <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+      </div>
+      
+      <div class="about_img">
+        <img src="/assets/chef.png" alt="chef">
+      </div>
+
+    </div>
+
+    <div class="accessed">
+
+      <h1>Mais acessadas</h1>
+
+      <div class="cards">
+
+        {% for card in dataset %}
+
+        <div class="card" id="{{ card.id }}">
+          <div class="card_img">
+            <img src="{{ card.image }}" alt="{{ card.title }}">
+          </div>
+          <div class="card_description">
+            <p class="title_recipe">{{ card.title }}</p>
+            <p class="author">{{ card.author }}</p>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </section>
+
+  {% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'layout.njk' %}
+
+  {% block style %}
+
+  <link rel="stylesheet" href="/info.css">
+
+  {% endblock %}
+
+  {% block bold %}
+  <a href="/"><img src="/assets/logo.png" alt="logo"></a>
+  <a href="/about">Sobre</a>
+  <a href="/recipes" class="bold">Receitas</a>
+  {% endblock %}
+
+  {% block content %}
+
+  <section>
+
+    <div class="header">
+      <div class="header_img">
+        <img src="{{ dataset.image }}" alt="{{ dataset.title }}">
+      </div>
+      <div class="header_description">
+        <p class="header_title">{{ dataset.title }}</p>
+        <p class="header_author">{{ dataset.author }}</p>
+      </div>
+    </div>
+
+    <div class="sub_title">
+      <h1>Ingredientes</h1>
+      <p class="buttons">Esconder</p>
+    </div>
+
+    <div class="ingredients">
+
+        <ul class="content show">
+          {% for ingredient in dataset.ingredients %}
+          <li>{{ ingredient }}</li>
+          {% endfor %}
+        </ul>
+
+    </div>
+
+    <div class="sub_title">
+      <h1>Mode de preparo</h1>
+      <p class="buttons">Esconder</p>
+    </div>
+
+    <div class="preparation">
+
+        <ol class="content show">
+          {% for step in dataset.preparation %}
+          <li>{{ step }}</li>
+          {% endfor %}
+        </ol>
+
+    </div>
+
+    <div class="sub_title">
+      <h1>Informações adicionais</h1>
+      <p class="buttons">Esconder</p>
+    </div>
+
+    <div class="information">
+
+        <div class="content show">
+          {% for report in dataset.information %}
+          <p>{{ report }}</p>
+          {% endfor %}    
+        </div>
+
+    </div>
+
+  </section>
+
+  {% endblock %}

@@ -1,0 +1,87 @@
+.header_img img {
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+
+.header_description {
+  text-align: center;
+}
+
+.header_title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  color: var(--color-title);
+}
+
+.header_author {
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--color-author);
+}
+
+.sub_title {
+  display: flex;
+  margin: 50px 0 20px 0;
+  align-items: center;
+}
+
+.sub_title h1 {
+    margin-right: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: var(--color-title);
+}
+
+.buttons {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  color: var(--color-footer-font);
+  cursor: pointer;
+}
+
+.buttons:hover {
+  color: rgba(55, 0, 255, 0.623);
+  transition: 200ms;
+}
+
+.content.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+li {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+li:first-child {
+  margin-top: 0;
+}
+
+.information p:last-child {
+  margin-top: 20px;
+}
+
+.infor.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.footer { 
+  margin-top: 50px;
+}

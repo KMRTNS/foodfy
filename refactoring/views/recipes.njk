@@ -1,0 +1,34 @@
+{% extends 'layout.njk' %}
+
+  {% block bold %}
+  <a href="/"><img src="/assets/logo.png" alt="logo"></a>
+  <a href="/about">Sobre</a>
+  <a href="/recipes" class="bold">Receitas</a>
+  {% endblock %}
+
+
+  {% block content %}
+
+  <section>
+
+    <div class="cards">
+
+      {% for card in dataset %}
+
+      <div class="card" id="{{ card.id }}">
+        <div class="card_img">
+          <img src="{{ card.image }}" alt="{{ card.title }}">
+        </div>
+        <div class="card_description">
+          <p>{{ card.title }}</p>
+          <p class="author">{{ card.author }}</p>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </section>
+
+  {% endblock %}

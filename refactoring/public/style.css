@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-about: #FBDFDB;
+  --color-title: #111111;
+  --color-author: #777777;
+  --color-footer: #EEEEEE;
+  --color-footer-font: #999999;
+  --color-paragraph: #444444;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  color: var(--color-title);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  padding: 30px;
+  width: 940px;
+  align-items: center;
+}
+
+header a:nth-child(2) {
+  margin: 0 30px 0 122px;
+}
+
+section {
+  margin: 20px auto 0 auto;
+  width: 940px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 30px;
+  height: 366px;
+  background-color: var(--color-about);
+}
+
+.about_description {
+  margin: auto 0 auto 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_description h1 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: bold;
+  color: var(--color-title);
+}
+
+.about_description p {
+  margin-top: 10px;
+  width: 324px;
+  height: 84px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.about_img {
+  position: relative;
+}
+
+.about_img img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 100px;
+}
+
+.accessed {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.accessed h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: var(--color-title);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 15px;
+  width: 300px;
+  height: 140px;
+}
+
+.card_description p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--color-title);
+}
+
+.card_description .author {
+  margin: 5px 0 30px 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: var(--color-author);
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 23px;
+  text-align: center;
+  color: #999999;
+  background-color: var(--color-footer);
+}
+
+
+
+

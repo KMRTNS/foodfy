@@ -1,0 +1,60 @@
+{% extends 'layout.njk' %}
+
+  {% block style %}
+
+  <link rel="stylesheet" href="/about.css">
+
+  {% endblock %}
+
+
+  {% block bold %}
+  
+  <a href="/"><img src="/assets/logo.png" alt="logo"></a>
+  <a href="/about" class="bold">Sobre</a>
+  <a href="/recipes">Receitas</a>
+  
+  {% endblock %}
+
+  {% block content %}
+
+  <section>
+
+    <h1>Sobre o Foodfy</h1>
+
+    <div class="paragraph">
+
+      {% for paragraph in dataset.about %}
+
+      <p> {{ paragraph }} </p>
+
+      {% endfor %}
+
+    </div>
+    
+    <h2>Como tudo começou...</h2>
+
+    <div class="paragraph">
+
+      {% for paragraph in dataset.history %}
+
+      <p> {{ paragraph }} </p>
+      
+      {% endfor %}
+
+    </div>
+
+    <h2>Nossas receitas</h2>
+
+    <div class="paragraph">
+
+      {% for paragraph in dataset.recipes %}
+
+      <p> {{ paragraph }} </p>
+      
+      {% endfor %}
+
+    </div>
+    
+  </section>
+  
+  {% endblock %}
