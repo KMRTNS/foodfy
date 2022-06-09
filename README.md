@@ -8,11 +8,11 @@
 
 ---
 
-- [ ] [building](./building)
-  - [ ] [about the challenge](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
+- [x] [building](./building)
+  - [x] [about the challenge](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md)
 
-- [ ] [refactoring](./refactoring)
-  - [ ] [about the challenge](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03)
+- [x] [refactoring](./refactoring)
+  - [x] [about the challenge](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03)
 
 - [ ] [administering](./administering)
   - [ ] [about the challenge](https://github.com/rocketseat-education/bootcamp-launchbase-desafios-04/blob/master/desafios/04-admin-foodfy.md)
